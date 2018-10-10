@@ -1,0 +1,19 @@
+{% extends 'BackOfficeBundle::tp3/toolbar.html.twig' %}
+{% block body %}
+
+Information de l'utilisateur : <br/>
+Nom : {{ internaute.nom }} <br/>
+Prenom : {{ internaute.prenom }} <br/>
+Mail : {{ internaute.mail }} <br/>
+Tel: {{ internaute.tel }} <br/>
+actif : {{ internaute.actif }} <br/>
+<br/>
+<br/>
+
+{{form_start(form)}}
+{{form_widget(form)}}
+<input type="submit">
+{{form_end(form)}}
+
+<a href="http://127.0.0.1:8000/admin/list"> Back </a>
+{% endblock %}
