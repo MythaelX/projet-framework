@@ -1,18 +1,12 @@
 <!DOCTYPE html>
-<html lang="{{ app.request.locale }}">
+<html>
     <head>
         <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <title>{% block title %}Symfony{% endblock %}</title>
-        <link rel="alternate" type="application/rss+xml" title="{{ 'rss.title'|trans }}" href="{{ path('blog_rss') }}">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
-        
-        {% block stylesheets %}
-        <link href="{{ asset('styleTest6.css') }}" type="text/css" rel="stylesheet" />
-        {% endblock %}
     </head>
     <body>
-        {% block header %}{% endblock %}
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
